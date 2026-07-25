@@ -1,0 +1,29 @@
+body{
+    font-family: Arial, sans-serif;
+    margin:40px;
+    background:#60015b;
+    color:#f8cfcf;
+}
+
+nav{
+    margin-bottom:30px;
+}
+
+nav a{
+    margin-right:20px;
+    text-decoration:none;
+    color:#0066cc;
+    font-weight:bold;
+}
+
+nav a:hover{
+    text-decoration:underline;
+}
+
+h1{
+    color:#f3caca;
+}
+
+ul{
+    line-height:2;
+}

@@ -9,8 +9,8 @@ def about(request):
 def subjects(request):
     return render(request,'subjects.html')
 
-def task(request): 
-    return render(request,'task.html')
+def tasks(request): 
+    return render(request,'tasks.html')
 
 def contact(request):
     return render(request,'contact.html')

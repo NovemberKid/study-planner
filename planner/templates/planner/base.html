@@ -1,0 +1,78 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        {% block title %}
+            Study Planner
+        {% endblock %}
+    </title>
+
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <!-- Logo -->
+        <div class="logo">
+            <h2>📚 Study Planner</h2>
+            <p>Organize • Track • Achieve</p>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="sidebar-nav">
+            <ul>
+                <li><a href="{% url 'dashboard' %}">Dashboard</a></li>
+                <li><a href="{% url 'subjects' %}">Subjects</a></li>
+                <li><a href="{% url 'tasks' %}">Tasks</a></li>
+                <li><a href="#">Calendar</a></li>
+                <li><a href="#">Progress</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
+                <li><a href="{% url 'contact' %}">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Footer -->
+        <div class="sidebar-footer">
+            <p>Version 1.0</p>
+        </div>
+
+    </aside>
+
+    <!-- Main Area -->
+    <div class="main-area">
+
+        <!-- Top Bar -->
+        <header class="topbar">
+
+            {% block topbar %}
+                <h3>Dashboard</h3>
+            {% endblock %}
+
+        </header>
+
+        <!-- Page Content -->
+        <main class="content">
+
+            {% block content %}
+
+            {% endblock %}
+
+        </main>
+
+    </div>
+
+</div>
+
+</body>
+</html>

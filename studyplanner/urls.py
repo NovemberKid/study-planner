@@ -23,7 +23,7 @@ urlpatterns = [
     path('',views.home, name='home'),
     path('about/',views.about, name='about'),
     path('subjects/', views.subjects, name='subjects'),
-    path('task/', views.task, name='task'),
+    path('tasks/', views.tasks, name='tasks'),
     path('contact/', views.contact, name='contact'),
     path('planner/', include('planner.urls')),
 ]

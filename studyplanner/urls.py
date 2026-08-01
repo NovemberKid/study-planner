@@ -26,4 +26,5 @@ urlpatterns = [
     path('tasks/', views.tasks, name='tasks'),
     path('contact/', views.contact, name='contact'),
     path('planner/', include('planner.urls')),
+    path("__reload__/", include("django_browser_reload.urls")),
 ]
